@@ -1,64 +1,64 @@
-// // 1
-// const numbers = [1, 5, 8, 12, 3, 15, 7, 20];
-// const words = ['кіт', 'собака', 'миша', 'папуга', 'хомяк'];
+// 1
+const numbers = [1, 5, 8, 12, 3, 15, 7, 20];
+const words = ['кіт', 'собака', 'миша', 'папуга', 'хомяк'];
 
-// function countItems(array, condition) {
-//     let count = 0;
+function countItems(array, condition) {
+    let count = 0;
 
-//     for (let element of array) {
-//         if (condition(element)) {
-//             count++;
-//         }
-//     }
+    for (let element of array) {
+        if (condition(element)) {
+            count++;
+        }
+    }
 
-//     return count;
-// }
+    return count;
+}
 
-// const isEven = num => num % 2 === 0;
-// console.log(countItems(numbers, isEven));
+const isEven = num => num % 2 === 0;
+console.log(countItems(numbers, isEven));
 
-// const isLarge = num => num > 10;
-// console.log(countItems(numbers, isLarge));
+const isLarge = num => num > 10;
+console.log(countItems(numbers, isLarge));
 
-// const isShort = word => word.length <= 3;
-// console.log(countItems(words, isShort));
+const isShort = word => word.length <= 3;
+console.log(countItems(words, isShort));
 
-// // 2
-// function calculate(a, b, operation) {
-//     return operation(a, b);
-// }
+// 2
+function calculate(a, b, operation) {
+    return operation(a, b);
+}
 
-// // стрількові фцнкції
-// const add = (a,b) => a + b;
-// const subtract = (a,b) => a - b;
-// const multiply = (a,b) => a * b;
-// const divide = (a,b) => {
-//     if (b === 0) {
-//         console.log("помилка, на нуль не ділиться");
-//         return;
-//     } 
-//     return a / b;
-// }
+// стрількові фцнкції
+const add = (a,b) => a + b;
+const subtract = (a,b) => a - b;
+const multiply = (a,b) => a * b;
+const divide = (a,b) => {
+    if (b === 0) {
+        console.log("помилка, на нуль не ділиться");
+        return;
+    } 
+    return a / b;
+}
 
-// // консолі
-// console.log(calculate(10, 5, add));
-// console.log(calculate(10, 5, subtract));
-// console.log(calculate(10, 5, multiply));   
-// console.log(calculate(10, 5, divide)); 
-// console.log(calculate(10, 0, divide));
+// консолі
+console.log(calculate(10, 5, add));
+console.log(calculate(10, 5, subtract));
+console.log(calculate(10, 5, multiply));   
+console.log(calculate(10, 5, divide)); 
+console.log(calculate(10, 0, divide));
 
-// 3
-// function repeatMessage(times, messageCreator) {
-//     const results = [];
-//     for (let i = 0; i < times; i++) {
-//         results.push(messageCreator(i));
-//     }
-//     return results;
-// }
+3
+function repeatMessage(times, messageCreator) {
+    const results = [];
+    for (let i = 0; i < times; i++) {
+        results.push(messageCreator(i));
+    }
+    return results;
+}
 
-// const callback = num => num + 6
+const callback = num => num + 6
 
-// console.log(repeatMessage(10, callback));
+console.log(repeatMessage(10, callback));
 
 // 4 
 const films = ["film1","film2","film3"];
